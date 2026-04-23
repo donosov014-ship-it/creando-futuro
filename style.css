@@ -1,0 +1,116 @@
+/* Estilos básicos */
+body {
+    background-color: #b81b96; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo para h2 - Corregido de 20rem a px */
+h2 {
+    color: #99006b; 
+    text-align: center;
+    font-size: 40px; 
+    margin: 10px 0;
+}
+
+/* Estilo para h4 - Corregido de 20rem a px */
+h4 {
+    color: #ff69b4; 
+    text-align: center;
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+/* Estilos de validación */
+input:valid {
+    background-color: rgb(188, 72, 169);
+}
+
+input:invalid {
+    background-color: lightpink;
+}
+
+.contenedor-principal {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgb(171, 35, 133);
+    border-radius: 8px;
+    border: 1px solid #ca43aa;
+    flex: 1; /* Ocupa el espacio disponible para empujar el footer hacia abajo */
+}
+
+.ceniza {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ee1caf;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.porotita {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #2a051f;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+
+
+
+.rosita {
+    margin: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+}
+
+label {
+    color: pink; 
+    font-size: 20px;
+}
+
+.estiloTitulo {
+    color: rgb(231, 104, 225);
+    text-align: center;
+}
+
+section, aside, footer {
+    color: pink;
+    font-size: 26px;
+    text-align: center;
+}
+
+/* --- MEDIA QUERIES --- */
+
+@media (max-width: 768px) {
+    /* Seleccionamos por ID (#hero) para que funcione */
+    #hero h2 {
+        font-size: 20px;
+        color: rgb(221, 82, 184);
+    }
+
+    /* h2 generales en versión móvil */
+    h2 {
+        font-size: 24px;
+        color: rgb(152, 43, 121);
+    }
+
+    /* Ajustes extras para que se vea bien en celular */
+    .rosita input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+} 
